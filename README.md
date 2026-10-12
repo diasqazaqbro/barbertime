@@ -9,12 +9,12 @@ yellow accent).
 
 ## Team · IT1-2315
 
-| Name                | Role      |
-| ------------------- | --------- |
-| Dias Adilov         | Team lead |
-| Nurmuhammed Zaitin  | Developer |
-| Zhangir Isametov    | Developer |
-| Ilmurat Kassymov    | Developer |
+| Name                | Role                  |
+| ------------------- | --------------------- |
+| Dias Adilov         | Team lead · Developer |
+| Zhangir Isametov    | Developer             |
+| Nurmuhammed Zaitin  | Designer              |
+| Ilmurat Kassymov    | Designer              |
 
 ## Features
 
