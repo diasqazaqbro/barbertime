@@ -138,6 +138,16 @@ src/
 `docs/` holds the reports from the earlier labs:
 
 - `BarberTime_Lab1.docx`: subject area and problem analysis
+- `BarberTime_Lab2.docx`: requirements and UML design
+- `uml/`: diagrams from Lab 2
+
+| Diagram | File |
+| --- | --- |
+| System architecture | [`01-architecture.png`](docs/uml/01-architecture.png) |
+| Use case diagram | [`02-use-case.png`](docs/uml/02-use-case.png) |
+| Class diagram | [`03-class.png`](docs/uml/03-class.png) |
+| Activity diagram "Book an appointment" | [`04-activity-book-appointment.png`](docs/uml/04-activity-book-appointment.png) |
+| Database schema (ER) | [`05-er-database.png`](docs/uml/05-er-database.png) |
 
 ## Getting started
 
