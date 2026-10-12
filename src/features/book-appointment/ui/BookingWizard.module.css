@@ -1,0 +1,216 @@
+.muted {
+  color: var(--text-2);
+}
+
+/* Barber step: "Any barber" card */
+.anyCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.anyIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--s-3);
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.anyTitle {
+  font-size: 17px;
+}
+
+.anyText {
+  flex: 1;
+  margin: 2px 0 var(--s-4);
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+/* Date & time step */
+.dateLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: var(--s-10);
+  align-items: start;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 580px;
+  margin-bottom: var(--s-8);
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 80px;
+  padding: 0;
+  border: 1px solid var(--sep);
+  border-radius: 16px;
+  background: var(--card);
+  cursor: pointer;
+}
+
+.day small {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-2);
+  text-transform: uppercase;
+}
+
+.day b {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.day[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.day[aria-pressed='true'] small {
+  color: var(--on-accent);
+}
+
+.subheading {
+  margin-bottom: var(--s-3);
+}
+
+/* Summary card */
+.summary {
+  position: sticky;
+  top: calc(var(--nav-h) + var(--s-6));
+  border-radius: var(--r-lg);
+  padding: var(--s-7);
+}
+
+.summaryList {
+  margin: var(--s-2) 0 0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--sep);
+  font-size: 15px;
+}
+
+.summaryRow:last-child {
+  border-bottom: 0;
+}
+
+.summaryRow dt {
+  color: var(--text-2);
+}
+
+.summaryRow dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fields {
+  margin: var(--s-4) 0 var(--s-5);
+}
+
+.formError {
+  margin-bottom: var(--s-4);
+  padding: 10px 14px;
+  border-radius: var(--r-sm);
+  background: var(--danger-soft);
+  font-size: 14px;
+  color: var(--danger);
+}
+
+.note {
+  margin-top: var(--s-3);
+  font-size: 13px;
+  text-align: center;
+  color: var(--text-2);
+}
+
+/* Success */
+.success {
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.successIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto var(--s-6);
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.successTitle {
+  margin-bottom: var(--s-2);
+  font-size: 32px;
+}
+
+.successCard {
+  margin: var(--s-7) 0 var(--s-5);
+  text-align: left;
+}
+
+.successActions {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .dateLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .days {
+    gap: 6px;
+    margin-bottom: var(--s-6);
+  }
+
+  .day {
+    height: 68px;
+    border-radius: var(--r-sm);
+  }
+
+  .day small {
+    font-size: 10px;
+  }
+
+  .day b {
+    font-size: 19px;
+  }
+
+  .summary {
+    padding: var(--s-5);
+  }
+}

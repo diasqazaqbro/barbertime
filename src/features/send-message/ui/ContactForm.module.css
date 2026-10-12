@@ -1,0 +1,43 @@
+.card {
+  border-radius: var(--r-lg);
+  padding: var(--s-7);
+}
+
+.title {
+  font-size: 24px;
+}
+
+.text {
+  margin: var(--s-2) 0 var(--s-6);
+  color: var(--text-2);
+}
+
+.submit {
+  margin-top: var(--s-6);
+}
+
+.sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--s-6) 0;
+  text-align: center;
+}
+
+.sentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--s-5);
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: var(--s-5);
+  }
+}

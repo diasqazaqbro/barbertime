@@ -1,0 +1,59 @@
+.dialog {
+  width: min(420px, calc(100% - 32px));
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-lg);
+  background: var(--card);
+  color: var(--text);
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.body {
+  padding: var(--s-7) var(--s-6) var(--s-6);
+  text-align: center;
+}
+
+.grabber {
+  display: none;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text {
+  margin: var(--s-2) 0 var(--s-6);
+  font-size: 15px;
+  color: var(--text-2);
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .dialog {
+    width: 100%;
+    max-width: 100%;
+    margin: auto 0 0;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .body {
+    padding: var(--s-3) var(--s-5) calc(var(--s-6) + env(safe-area-inset-bottom));
+  }
+
+  .grabber {
+    display: block;
+    width: 36px;
+    height: 5px;
+    margin: 0 auto var(--s-5);
+    border-radius: 3px;
+    background: var(--text-3);
+  }
+}

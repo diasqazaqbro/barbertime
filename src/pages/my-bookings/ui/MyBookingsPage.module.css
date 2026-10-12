@@ -1,0 +1,13 @@
+.group + .group {
+  margin-top: var(--s-10);
+}
+
+.groupTitle {
+  margin-bottom: var(--s-3);
+  font-size: 22px;
+}
+
+.list {
+  display: grid;
+  gap: var(--s-3);
+}

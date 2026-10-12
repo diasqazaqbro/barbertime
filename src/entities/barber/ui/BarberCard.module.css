@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.name {
+  font-size: 17px;
+}
+
+.title,
+.meta {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.chips {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 6px;
+  margin: var(--s-3) 0 var(--s-4);
+}

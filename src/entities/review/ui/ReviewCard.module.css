@@ -1,0 +1,22 @@
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.who {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.who time {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.text {
+  font-size: 15px;
+}

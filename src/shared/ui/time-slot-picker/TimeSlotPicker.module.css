@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s-2);
+}
+
+.slot {
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--sep);
+  border-radius: var(--r-sm);
+  background: var(--card);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+@media (hover: hover) {
+  .slot:not(:disabled):not(.selected):hover {
+    border-color: var(--text);
+  }
+}
+
+/* Legend swatch — declared before the state classes so .taken / .selected override it */
+.swatch {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--sep);
+  border-radius: 4px;
+  background: var(--card);
+}
+
+/* Taken is also struck through, so colour is not the only signal */
+.taken {
+  border-color: transparent;
+  background: var(--fill);
+  color: var(--text-3);
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.selected {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4);
+  margin-top: var(--s-4);
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--s-2);
+  }
+}

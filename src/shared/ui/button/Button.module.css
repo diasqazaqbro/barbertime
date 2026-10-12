@@ -1,0 +1,86 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: var(--r-pill);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background: var(--fill);
+  color: var(--text-3);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.sm {
+  padding: 0 var(--s-4);
+  font-size: 14px;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.secondary {
+  background: var(--fill);
+  color: var(--text);
+}
+
+.ghost,
+.danger-ghost {
+  background: transparent;
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--sep);
+}
+
+.danger-ghost {
+  color: var(--danger);
+}
+
+.dark {
+  background: #1d1d1f;
+  color: #fff;
+}
+
+.danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+@media (hover: hover) {
+  .primary:not(:disabled):hover {
+    background: var(--accent-press);
+  }
+
+  .secondary:not(:disabled):hover,
+  .ghost:hover,
+  .danger-ghost:hover {
+    background: color-mix(in srgb, var(--fill), var(--text) 7%);
+  }
+
+  .dark:hover {
+    background: #000;
+  }
+}

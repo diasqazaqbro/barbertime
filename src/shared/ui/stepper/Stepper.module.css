@@ -1,0 +1,91 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin: 0 0 var(--s-12);
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.line {
+  width: 48px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--sep);
+}
+
+.done .line,
+.current .line {
+  background: var(--text);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 13px;
+}
+
+.current .dot {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.todo .dot {
+  background: var(--fill);
+  color: var(--text-2);
+}
+
+.todo .button {
+  color: var(--text-2);
+}
+
+@media (max-width: 767px) {
+  .stepper,
+  .step {
+    gap: var(--s-2);
+  }
+
+  .stepper {
+    margin-bottom: var(--s-6);
+  }
+
+  .line {
+    width: 28px;
+  }
+
+  /* Only the current step keeps its label on phones */
+  .done .label,
+  .todo .label {
+    display: none;
+  }
+}

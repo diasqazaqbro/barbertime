@@ -1,0 +1,25 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.star,
+.stars {
+  color: #f5b800;
+}
+
+.count {
+  font-weight: 400;
+  color: var(--text-2);
+}
+
+.stars {
+  letter-spacing: 1px;
+}
+
+.off {
+  color: var(--text-3);
+}
