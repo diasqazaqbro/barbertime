@@ -34,7 +34,7 @@ export function Footer() {
 
         <p className={s.copy}>
           © {new Date().getFullYear()} {SHOP.name}. Demo project for the IITU Full Stack course · Dias Adilov,
-          Nurmuhammed Zaitin, Zhangir Isametov · IT1-2315
+          Nurmuhammed Zaitin, Zhangir Isametov, Ilmurat Kassymov · IT1-2315
         </p>
       </div>
     </footer>

@@ -14,6 +14,7 @@ yellow accent).
 | Dias Adilov         | Team lead |
 | Nurmuhammed Zaitin  | Developer |
 | Zhangir Isametov    | Developer |
+| Ilmurat Kassymov    | Developer |
 
 ## Features
 
