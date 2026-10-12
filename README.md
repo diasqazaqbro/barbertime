@@ -133,6 +133,12 @@ src/
     └── config/    routes (path builders), shop (address, hours, schedule)
 ```
 
+## Lab documents
+
+`docs/` holds the reports from the earlier labs:
+
+- `BarberTime_Lab1.docx`: subject area and problem analysis
+
 ## Getting started
 
 Requirements: Node.js 20.19+ or 22.12+.
